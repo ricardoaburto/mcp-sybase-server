@@ -2,7 +2,7 @@
 
 # This script builds the Docker image for the Sybase server.
 
-IMAGE_NAME="executedatabase/sybase-server"
+IMAGE_NAME="mpc-sybase-server-dev"
 IMAGE_TAG="latest"
 
 echo "Building Docker image: ${IMAGE_NAME}:${IMAGE_TAG}"

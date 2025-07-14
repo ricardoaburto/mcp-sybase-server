@@ -12,7 +12,7 @@ import { listTablesTool, describeTableTool } from './tools/schemaTools.js';
 
 const server = new Server(
   {
-    name: "@executedatabase/sybase-server",
+    name: "mpc-sybase-server-dev",
     version: "1.1.0",
   },
   {
