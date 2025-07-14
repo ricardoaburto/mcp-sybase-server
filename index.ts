@@ -9,11 +9,16 @@ import {
 import { initDatabase, dbAll, getDatabaseMetadata, getListTablesQuery, getDescribeTableQuery } from './db/index.js';
 import { queryTool } from './tools/queryTools.js';
 import { listTablesTool, describeTableTool } from './tools/schemaTools.js';
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+import path from "path";
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const pkg = JSON.parse(readFileSync(path.join(__dirname, "../../package.json"), "utf-8"));
 const server = new Server(
   {
     name: "mcp-sybase-server-dev",
-    version: "1.0.4",
+      version: pkg.version, // ✅ automático
   },
   {
     capabilities: {
