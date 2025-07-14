@@ -1,4 +1,4 @@
-# @mpc-sybase-server-dev
+# @mcp-sybase-server-dev
 
 Este proyecto proporciona un servidor compatible con el **Model Context Protocol (MCP)**, diseñado para interactuar con una base de datos Sybase. Actúa como un puente entre un cliente compatible con MCP (como un asistente de IA) y tu base de datos, permitiendo ejecutar consultas y explorar el esquema de la base de datos de forma remota.
 
@@ -26,7 +26,7 @@ Antes de empezar, asegúrate de tener instalado lo siguiente en tu sistema:
 1.  **Clona el repositorio** (o descarga los archivos en un directorio):
     ```bash
     # Ejemplo si estuviera en un repositorio git
-    # git clone https://github.com/mpc-sybase-server-dev.git
+    # git clone https://github.com/mcp-sybase-server-dev.git
     # cd sybase-server
     ```
 
@@ -82,13 +82,13 @@ El proyecto incluye un `Dockerfile` para facilitar el despliegue en contenedores
     sh build.sh
     
     # O directamente con Docker
-    docker build -t mpc-sybase-server-dev .
+    docker build -t mcp-sybase-server-dev .
     ```
 
 2.  **Ejecutar el contenedor:**
     Usa el siguiente comando para iniciar el servidor dentro de un contenedor Docker. El flag `-i` es crucial para mantener la entrada estándar abierta y permitir que el servidor reciba peticiones.
     ```bash
-    docker run -i --rm mpc-sybase-server-dev "{\"host\":\"tu_host\",\"port\":tu_puerto,\"database\":\"tu_db\",\"user\":\"tu_usuario\",\"password\":\"tu_contraseña\"}"
+    docker run -i --rm mcp-sybase-server-dev "{\"host\":\"tu_host\",\"port\":tu_puerto,\"database\":\"tu_db\",\"user\":\"tu_usuario\",\"password\":\"tu_contraseña\"}"
     ```
 
 ## Licencia

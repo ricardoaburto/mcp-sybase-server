@@ -1,6 +1,6 @@
 {
-    "name": "mpc-sybase-server-dev",
-    "version": "1.0.1",
+    "name": "mcp-sybase-server-dev",
+    "version": "1.0.4",
     "description": "MCP server",
     "license": "MIT",
     "author": "",
@@ -8,7 +8,7 @@
     "bugs": "",
     "type": "module",
     "bin": {
-        "ea-sybase-server": "dist/src/index.js"
+        "mcp-sybase-server-dev": "dist/src/index.js"
     },
     "files": [
         "dist"

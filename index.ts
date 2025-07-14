@@ -12,8 +12,8 @@ import { listTablesTool, describeTableTool } from './tools/schemaTools.js';
 
 const server = new Server(
   {
-    name: "mpc-sybase-server-dev",
-    version: "1.1.0",
+    name: "mcp-sybase-server-dev",
+    version: "1.0.4",
   },
   {
     capabilities: {
