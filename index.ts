@@ -18,7 +18,7 @@ const pkg = JSON.parse(readFileSync(path.join(__dirname, "../../package.json"), 
 const server = new Server(
   {
     name: "mcp-sybase-server-dev",
-      version: pkg.version, // ✅ automático
+      version: "1.1.0", // ✅ automático
   },
   {
     capabilities: {
