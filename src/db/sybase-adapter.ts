@@ -23,7 +23,7 @@ export class SybaseAdapter implements DbAdapter {
 
     all(query: string, params?: any[]): Promise<any[]> {
         const { host, port, database, user, password } = this.config;
-        const command = `java -cp "lib/jtds-1.3.1.jar" SybaseQuery "${host}" "${port}" "${database}" "${user}" "${password}" "${query}"`;
+        const command = `java -cp "lib/jtds-1.3.1.jar;." SybaseQuery "${host}" "${port}" "${database}" "${user}" "${password}" "${query}"`;
 
         return execPromise(command).then(({ stdout }) => {
             return JSON.parse(stdout);
