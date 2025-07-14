@@ -1,5 +1,5 @@
 {
-    "name": "mpc-sybase-server",
+    "name": "@executedatabase/sybase-server",
     "version": "1.0.0",
     "description": "MCP server",
     "license": "MIT",
